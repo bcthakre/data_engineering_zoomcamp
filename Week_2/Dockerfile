@@ -5,12 +5,16 @@ FROM python:3.9.1
 RUN pip install pandas
 RUN pip install seaborn
 
+# Specify workdir
+
+WORKDIR /app
+
 # copy the executable file
 # COPY FROM TO
 COPY pipeline.py pipeline.py
 
 # This will be entry point when we start the Docker image
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "python" ,"pipeline.py"]
 
 # Docker command to run in the terminal
 # docker build -t test:pandas . 
