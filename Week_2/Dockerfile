@@ -43,3 +43,8 @@ ENTRYPOINT [ "python" ,"pipeline.py"]
 # having issue not connecting to pgcli
 
 # https://stackoverflow.com/questions/32439167/psql-could-not-connect-to-server-connection-refused-error-when-connecting-to
+
+# string to connect to enginer from sqlalchemy
+# https://stackoverflow.com/questions/9353822/connecting-postgresql-with-sqlalchemy
+# create_engine('postgresql://newuser:somepassword@localhost:7432/nytaxi')
+# 'postgresql://{username}:{password}@localhost:{portAssigned}/{db}'
