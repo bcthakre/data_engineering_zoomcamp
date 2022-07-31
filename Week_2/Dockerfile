@@ -35,3 +35,11 @@ ENTRYPOINT [ "python" ,"pipeline.py"]
 # 
 
 # docker run -it -e POSTGRES_USER=newuser -e POSTGRES_PASSWORD=somepassword -e POSTGRES_DB=nytaxi -v $(pwd)/ny_taxi_postgres:/var/lib/postgresql/data -p 7432:5432  postgres:14.4
+
+# command to run pgcli
+
+# pgcli -h localhost -p 7432 -u newuser -d nytaxi
+
+# having issue not connecting to pgcli
+
+# https://stackoverflow.com/questions/32439167/psql-could-not-connect-to-server-connection-refused-error-when-connecting-to
